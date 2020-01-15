@@ -14,8 +14,7 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('connected successfully');
     conn.write('Name: MEG');
-    conn.write('Move: up');
-    // conn.write('Move: down ');
+    // conn.write('Move: up');
     
   });
   
