@@ -12,6 +12,9 @@ const setupInput = function(conn) {
   stdin.on('data',(data)=>{
     handleInput(data, conn);
   });
+  stdin.on('data',()=>{
+    conn.write("Say: _____");
+  })
 
   return stdin;
 };
